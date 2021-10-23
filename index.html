@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schnick Schnack Schnuck</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h2>Let's play</h2>
+        <h1>Schnick Schnack Schnuck!</h1>
+      </div>
+      <div class="wrapper-rounds">
+        <p class="p-rounds">Wie viele Runden willst Du spielen?</p>
+        <div class="rounds">
+          <div class="choose-rounds">
+            <form class="choose-rounds">
+              <label>
+                <input type="radio" name="num-rounds" id="three" value="3" /> 3
+              </label>
+              <label>
+                <input type="radio" name="num-rounds" id="five" value="5" /> 5
+              </label>
+              <label>
+                <input type="radio" name="num-rounds" id="ten" value="10" /> 10
+              </label>
+              <label>
+                <input type="radio" name="num-rounds" id="fifteen" value="15" />
+                15
+              </label>
+            </form>
+          </div>
+          <div class="wrapper-show-rounds">
+            <div class="show-rounds">
+              <p><span class="now">0</span> / <span class="max">0</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-game">
+        <p class="p-rounds">Wähle aus: Schere, Stein oder Papier?</p>
+        <div class="wrapper-btns">
+          <div class="btn scissors">
+            <img src="assets/imgs/schere.svg" alt="schere" />
+          </div>
+          <div class="btn stone">
+            <img src="assets/imgs/stein.svg" alt="stein" />
+          </div>
+          <div class="btn paper">
+            <img src="assets/imgs/papier.svg" alt="papier" />
+          </div>
+        </div>
+        <!-- <h3>Score</h3> -->
+        <div class="wrapper-score">
+          <div class="wrapper-me">
+            <p class="show">ICH</p>
+            <p class="show-played"></p>
+          </div>
+          <div class="score">
+            <p>
+              <span class="score-me">0 </span> :
+              <span class="score-you">0</span>
+            </p>
+          </div>
+          <div class="wrapper-you">
+            <p class="show">DU</p>
+            <p class="show-played"></p>
+          </div>
+        </div>
+        <div class="show-final">Hier steht das Ergebnis</div>
+      </div>
+      <div class="play-again">
+        <div class="btn-again">Nochmal!</div>
+      </div>
+    </main>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
