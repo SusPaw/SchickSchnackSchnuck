@@ -130,8 +130,6 @@ function countClicks() {
     btnStein.style.backgroundColor = "rgb(200, 200, 200)";
   }
 }
-document.querySelector("img").setAttribute("fill", "red");
-
 
 btnSchere.addEventListener("click", () => {
   game(1);
